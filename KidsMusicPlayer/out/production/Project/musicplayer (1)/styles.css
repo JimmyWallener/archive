@@ -1,0 +1,78 @@
+.root {
+    -fx-background-image: url("/img/background.jpg");
+    -fx-background-color: #383838;
+}
+
+.button {
+    -fx-background-color: rgba(38,38,38.05),
+    linear-gradient(#9a9a9a, #909090),
+    linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-text-fill: #0F1036;
+    -fx-font-size: 30px;
+    -fx-font-family: Amble CN;
+    -fx-font-weight: bolder;
+    -fx-cursor: hand;
+    -fx-spacing: 50px;
+    -fx-alignment: center;
+    -fx-padding: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+
+}
+.button:pressed {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-background-color: rgba(38,38,38.07),
+    linear-gradient(#9a9a90, #909090),
+        linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+
+}
+#cat {
+             -fx-background-image: url("/img/cat.png");
+             -fx-background-position: center center;
+             -fx-background-size: 150 130;
+             -fx-background-repeat: stretch;
+ }
+#cow {
+            -fx-background-image: url("/img/cow.png");
+            -fx-background-position: center;
+            -fx-background-size: 150 130;
+            -fx-background-repeat: stretch;
+}
+#dog {
+            -fx-background-image: url("/img/dog.png");
+            -fx-background-position: center;
+            -fx-background-size: 150 130;
+            -fx-background-repeat: stretch;
+}
+#pig {
+            -fx-background-image: url("/img/pig.png");
+            -fx-background-position: center;
+            -fx-background-size: 150 130;
+            -fx-background-repeat: stretch;
+}
+#rooster {
+            -fx-background-image: url("/img/rooster.png");
+            -fx-background-position: center;
+            -fx-background-size: 150 130;
+            -fx-background-repeat: stretch;
+}
+#horse {
+            -fx-background-image: url("/img/horse.png");
+            -fx-background-position: center center;
+            -fx-background-size: 150 130;
+            -fx-background-repeat: stretch;
+}
+
+#titleText {
+    -fx-font-size: 30px;
+    -fx-font-family: Amble CN;
+    -fx-font-weight: bolder;
+    -fx-text-alignment: center;
+
+}

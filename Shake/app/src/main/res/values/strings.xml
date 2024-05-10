@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shake</string>
+    <string name="show_count_label">0</string>
+    <string name="arrow_rotate">arrow</string>
+</resources>

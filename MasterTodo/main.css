@@ -1,0 +1,95 @@
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Lato', sans-serif;*/
+body {
+    background-image: url(toDo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+   /******Change the font color to white ********/
+    color:#ffff;
+}
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 10px;
+}
+ul {
+    margin-top:10px;
+    width: 100%;
+}
+ul > li{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 2px;
+    list-style-type: none;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    margin-top:5px;
+    width: inherit;
+    border-bottom: 1px solid #797676;
+    cursor: pointer;
+    word-break: break-all;
+
+}
+ /* Förändrade storleken på checkboxen och skapade en marginal mot texten så de inte sitter ihop */
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin: 10px;
+}
+input[type=checkbox]:hover {
+    transform: scale(2);
+}
+
+button, input[type=button] {
+    background-color: rgba(251, 252, 253, 0.5);
+    border-style: none;
+    border: 0;
+}
+button:hover, input[type=button]:hover {
+    background-color: rgba(251, 252, 253, 0.7);
+    border-style: none;
+    border: 0;
+}
+
+
+.container {
+    background-color: #024746;
+    /*background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);*/
+    height: 580px; /* Ökade här för att alla 10 punkter är inom containern */
+    width: auto;
+    margin: 20px 20%;
+    border-radius: 10px;
+    padding:0 50px;
+    box-shadow: 0 3px 5px 0 black;
+}
+
+
+
+/*har addat css style*/
+.completed {
+    text-decoration: line-through;  
+    color:#000;
+    background-color: rgb(29, 134, 7);
+}
+
+
+@media screen and (max-width:600px) {
+    .container {
+        margin: 60px auto;
+          padding:25px;
+    }
+    
+    ul>li {
+         width: auto;
+    }
+    
+    h1{
+        padding:1px;
+    }
+}

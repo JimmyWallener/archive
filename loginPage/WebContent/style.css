@@ -1,0 +1,50 @@
+body {
+	background-color: #3e6383;
+}
+
+.container {
+  margin: 200px auto;
+  width: 640px;
+  background: #f4f5f0;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 2px 2px #0f4c81;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+.login {
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 50px 50px;
+  width: 310px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+ 
+.login h1 {
+  margin: -15px -20px 21px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  text-align: center;
+  text-shadow: 0 1px white;
+  background: #f4f5f0;
+  border-bottom: 1px solid #cfcfcf;
+  
+}
+ 
+
+.login input[type=text], .login input[type=password] {
+  width: 250px;
+}
+
+.title-text {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-weight: bold;
+	color: #f4f5f0;
+	font-size: 28px;
+}

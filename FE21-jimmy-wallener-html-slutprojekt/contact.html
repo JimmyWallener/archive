@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mock-Portfolio: Contact Page</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Wallener designs logo" />
+        </div>
+        <div class="header-nav">
+          <nav class="nav-bar">
+            <ul>
+              <li class="home">
+                <a href="index.html">
+                  <span>home</span>
+                </a>
+              </li>
+              <li class="info">
+                <a href="info.html">
+                  <span>About Me</span>
+                </a>
+              </li>
+              <li class="contact">
+                <a href="contact.html">
+                  <span>Contact Me</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="maincontent">
+        <div class="contact-content">
+          <div class="form-card">
+            <section class="contact-form">
+              <h1>#Contact Form</h1>
+              <form
+                id="contact"
+                action="mailto:jimmy.wallener@gritacademy.se"
+                method="GET"
+                enctype="application/x-www-form-urlencoded"
+              >
+                <fieldset>
+                  <legend>Contact Information</legend>
+                  <label for="fname">First Name:</label><br />
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    required
+                    autofocus
+                  /><br /><br />
+                  <label for="lname">Last Name:</label><br />
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    required
+                  /><br /><br />
+                  <label for="email">Email:</label><br />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                  /><br /><br />
+                  <label for="textarea">Message:</label><br />
+                  <input
+                    type="text"
+                    id="textarea"
+                    name="textarea"
+                    required
+                  /><br /><br />
+                  <button class="form-btn" type="submit" form="contact">
+                    send
+                  </button>
+                  <button class="form-btn" type="reset" form="contact">
+                    reset
+                  </button>
+                </fieldset>
+              </form>
+            </section>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="ads"></div>
+      </aside>
+      <footer>
+        <div class="socials">
+          <div class="social-icons">
+            <a href="https://github.com/JimmyWallener">
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jimmy-wallener/">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="copyright">
+            <p>copyright 2021 &copy; - wallener design</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dear Diary</string>
+    <string name="add_entry">Add entry</string>
+    <string name="title">Title</string>
+    <string name="diary_text">Type some text here</string>
+    <string name="entry">Diary Entry</string>
+    <string name="send_btn">Add Entry</string>
+</resources>

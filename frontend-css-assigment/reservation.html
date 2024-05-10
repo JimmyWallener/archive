@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic HTML School Assignment">
+    <meta name="keywords" content="HTML, Frontend, School, Grit Academy">
+    <meta name="author" content="Jimmy Wallener">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Rock+Salt&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Boka Bord - Rost</title>
+</head>
+<body class="contact-container">
+    <nav>
+        <div class="logo">
+            <img class="logo-img" src="media/images/logo.png" alt="Rost logo">
+        </div>
+        <div class="links">
+            <a href="index.html">Hem</a>
+            <a href="food.html">Mat</a>
+        </div>
+    </nav>
+    <main>
+        <article class="reservation">
+           <h1>#bokabord</h1>
+           <h3>viktig information</h3>
+           <p>
+            Boka bord för fler än 10 personer?
+           </p>
+           <p> 
+            För att ni skall få en snabb och smidig service vill vi att ni förbokar er mat samt håller er inom 3 olika rätter (vegetariska och allergivänliga alternativ räknas utanför dessa).
+           </p>
+        </article>
+        <form class="reservation-form" id="boka">
+            <fieldset>
+                <legend>Boka Bord</legend>
+                <div class="form-field">
+                    <label>Plats: </label>
+                    <span>ROST, Storgatan 57, 262 35 Ängelholm</span>
+                </div>
+                <div class="form-field">   
+                    <label for="guests">Gäster: </label>
+                    <select name="guests" id="guests" form="boka">
+                        <option value="1">1 pers</option>
+                        <option value="2">2 pers</option>
+                        <option value="3">3 pers</option>
+                        <option value="4">4 pers</option>
+                        <option value="5">5 pers</option>
+                        <option value="6">6 pers</option>
+                        <option value="7">7 pers</option>
+                        <option value="8">8 pers</option>
+                        <option value="9">9 pers</option>
+                        <option value="10">10 pers</option>
+                        <option value="11">11 pers</option>
+                        <option value="12">12 pers</option>
+                        <option value="fler12">mer än 12 pers</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="bokingsdatum">Datum: </label>
+                    <input type="date" id="bokingsdatum" name="bokingsdatum">
+                    <p>(Online boking är möjlig med 1 timme varsel och 2 månader framåt.)</p>
+                </div>
+                <button type="button" form="boka">Fortsätt</button>
+            </fieldset> 
+        </form>
+    </main>
+</body>
+</html>

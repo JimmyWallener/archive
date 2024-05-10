@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Flickr-Clone</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Flickr-Clone</h1>
+      </header>
+      <nav>
+        <form id="query">
+          <fieldset>
+            <legend>Search Flickr Photos</legend>
+            <div>
+              <label for="keyword">Keyword: </label>
+              <input
+                name="keyword"
+                type="text"
+                placeholder="Search flickr"
+                required
+                autofocus
+              />
+            </div>
+            <div>
+              <label for="size">Photo size: </label>
+              <select name="size">
+                <option value="m">240px</option>
+                <option value="n">320px</option>
+                <option value="w">400px</option>
+                <option value="z">640px</option>
+                <option value="c">800px</option>
+              </select>
+            </div>
+            <div>
+              <label for="count">Fetch how many?: </label>
+              <select name="count">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+              </select>
+            </div>
+          </fieldset>
+          <div>
+            <button type="submit" id="submit">Search</button>
+            <button type="reset" id="reset">Reset</button>
+          </div>
+        </form>
+      </nav>
+      <main class="wrapper">
+        <div>
+          <h4 class="error"></h4>
+        </div>
+
+        <div class="slideshow">
+          <div class="slides"></div>
+
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
+        </div>
+      </main>
+
+      <footer>some copyright text</footer>
+    </div>
+  </body>
+</html>

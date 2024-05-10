@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+	background: #f7f7f7;
+}
+
+.header_title {
+	padding: 30px;
+}
+
+.search_center {
+	margin: 0 100px;
+	margin-top: 20px;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	align-content: center;
+	background: #2c2f33;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+}
+
+.form_search {
+	padding: 80px;
+}
+
+#search {
+	width: 200px;
+	height: 25px;
+	
+}
+.search_btn {
+	height: 30px;
+	
+}
+

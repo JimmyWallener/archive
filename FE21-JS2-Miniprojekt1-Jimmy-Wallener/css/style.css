@@ -1,0 +1,129 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Index Page */
+
+.start-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0c0c0c;
+  width: 100vw;
+  height: 100vh;
+}
+.rps-img {
+  width: 50vw;
+  height: 50vh;
+  cursor: pointer;
+}
+
+/* Game Page*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 14px 7px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'Rules Rules . . . . Highscore Highscore'
+    '. Player-One Player-One . . . . .'
+    '. Rock Paper Scissor Versus Versus Computer-Choice Computer-Choice'
+    '. Rock Paper Scissor Versus Versus Computer-Choice Computer-Choice'
+    '. Rock Paper Scissor Versus Versus Computer-Choice Computer-Choice'
+    '. . . . . . . .';
+  background-color: #0c0b0b;
+  width: 100vw;
+  height: 100vh;
+}
+
+.rules {
+  grid-area: Rules;
+  color: whitesmoke;
+  border: 0.1em dotted white;
+  border-radius: 1em;
+  margin-left: 1rem;
+  height: 20vh;
+}
+.rules p {
+  padding: 0.5rem;
+}
+
+.highscore {
+  grid-area: Highscore;
+  height: 20vh;
+}
+
+.rock {
+  grid-area: Rock;
+}
+
+.paper {
+  grid-area: Paper;
+}
+
+.scissor {
+  grid-area: Scissor;
+}
+
+.player-one {
+  grid-area: Player-One;
+}
+
+.round {
+  grid-area: Round;
+}
+
+.computer {
+  grid-area: Computer;
+}
+
+.versus {
+  grid-area: Versus;
+}
+
+.computer-choice {
+  grid-area: Computer-Choice;
+}
+
+.game-area {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 10vw;
+  height: 30vh;
+  border-radius: 2em;
+}
+
+.scoreheading {
+  color: whitesmoke;
+  text-align: center;
+}
+.scores,
+.scorenames {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: clamp(2em, 1.5vw, 3em);
+  text-transform: uppercase;
+  color: whitesmoke;
+  letter-spacing: 0.3em;
+}

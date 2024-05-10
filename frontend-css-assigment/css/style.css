@@ -1,0 +1,246 @@
+:root {
+    --title-font: 'RocknRoll One', sans-serif;
+    --title-color: rgb(245, 244, 248);
+    --text-font: 'New Rocker', cursive;
+    --text-color: rgba(242, 240, 248, 0.836);
+    --alt-text-font: 'Rock Salt', cursive;
+    --alt-text-color: rgb(255, 255, 255);
+    --link-hover-color: rgb(182, 182, 182);
+    --link-active-color: rgba(253, 132, 132, 0.815);
+    --bg-color: rgba(48, 47, 47, .9);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------- */
+/* CSS - DEFAULT */
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+.logo {
+    position: relative;
+    float: left;
+    padding: 0 5em;
+}
+.logo-img {
+    max-width: 10vw;
+    max-height: 15vh;
+}
+.links {
+    font-family: var(--title-font);
+    padding: .2em 5em;
+    letter-spacing: .5em;
+    word-spacing: .5em;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+a, a:visited {
+    color: var(--title-color);
+}
+a:hover {
+    color: var(--link-hover-color);
+    cursor: pointer;
+    position: relative;
+}
+a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid var(--link-hover-color);
+}
+a:active {
+    color: var(--link-active-color);
+}
+
+
+/* END - CSS DEFAULT */
+/* -------------------------------- */
+/* CSS - INDEX */
+
+.index-container {
+    background-color:rgb(221, 214, 214);
+    background-image: url("/media/images/large/performance-large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome {
+    position: relative;
+    top: 10vh;
+    margin: auto;
+    padding: 2rem;
+    max-width: 50vw;
+    background-color: var(--bg-color);
+    border-radius: 2em;
+}
+.welcome > h1 {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: center;
+}
+.welcome > p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    line-height: 2em;
+    text-align: center;
+}
+
+/* END OF CSS FOR INDEX */
+
+
+/* -------------------------------- */
+/* CSS - FOOD */
+
+.food-container {
+    background-color:rgb(221, 214, 214);
+    background-image: url("/media/images/large/hamburger-large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.food-menu {
+    position: relative;
+    top: 10vh;
+    margin: auto;
+    padding: 2rem;
+    max-width: 70vw;
+    background-color: var(--bg-color);
+    border-radius: 2em;
+}
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu-side {
+    display: flex;
+    flex-direction: column;
+}
+.menu {
+    text-align: center;
+    padding: 5rem;
+}
+.menu > h1 {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+ul > li, .desc {
+    text-align: left;
+}
+
+.food-item {
+    font-family: var(--alt-text-font);
+    color: var(--text-color);
+    font-size: .7em;
+    line-height: 3em;
+}
+.desc {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-style: italic;
+    font-size: 1em;
+    line-height: .4em;
+    text-indent: .7em;
+}
+/* END - CSS FOR FOOD */
+
+/* -------------------------------- */
+/* CSS - CONTACT */
+.contact-container {
+    background-color:rgb(221, 214, 214);
+    background-image: url("/media/images/large/records-large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reservation, .reservation-form {
+    position: relative;
+    top: 10vh;
+    margin: auto;
+    padding: 2rem;
+    max-width: 50vw;
+    background-color: var(--bg-color);
+    border-radius: 2em;
+    font-family: var(--title-font);
+    color: var(--text-color);
+    line-height: 1em;
+    text-align: center;
+}
+
+.reservation-form {
+    top: 15vh;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+.reservation > h1, .reservation > h3 {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: center;
+}
+.reservation > h3 {
+    font-size: 1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: row;
+    line-height: 1rem;
+    padding: 1em;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.form-field > p {
+    font-size: .5em;
+    margin-left: 2em;
+}
+label {
+    margin-right: 1em;
+}
+button {
+    position: relative;
+    padding: .5em;
+    background-color: rgba(15, 15, 15, 0.4);
+    border: none;
+    color: var(--text-color);
+    font-size: .8em;
+    box-shadow: .5px .5px whitesmoke;
+    left: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: rgba(59, 59, 59, 0.4);
+    cursor: pointer;
+}
+
+/* END - CSS FOR CONTACT */
+
+
